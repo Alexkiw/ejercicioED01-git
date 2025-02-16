@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f5f1;
+    color: #333;
+    position: relative;
+}
+
+/* Encabezado */
+header {
+    background-color: #2791e979;
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0px 12px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Menú */
+.menu {
+    list-style: none;
+    background: #161616;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    background-color: #FFD700;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Fondo con overlay */
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/uri.webp);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.fondo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+#izq img {
+    max-width: 600px;
+    height:900px;
+    display: block;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 15px rgba(20, 163, 219, 0.8));
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 10%;
+}
+
+
+.cuadro {
+    background-color: rgba(10, 10, 10, 0.158);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cuadro:hover {
+    transform: scale(1.05);
+}
+
+#dos{
+    
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+}
+      
+
+
+/*Animación para que la imagen se mueva(obviamente es código copiado)*/
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #izq img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .cuadro {
+        max-width: 90%;
+    }
+}
