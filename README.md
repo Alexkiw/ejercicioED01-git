@@ -1,5 +1,5 @@
 # ejercicioED01-git
-<!--Archivo de las Tormentas - Página Web
+Archivo de las Tormentas - Página Web
 
 Descripción
 Esta es una página web dedicada a la saga "El Archivo de las tormentas" escrita por Brandon Sanderson. En ella, los seguidores de la saga podrán encontrar un espacio donde encontrar información sobre los libros, personajes, teorías y mucho más.
@@ -32,4 +32,3 @@ Este proyecto está creado bajo la licencia MIT.
 
 Contacto: 
 En mi perfil de GitHub tienes enlaces para contactar conmigo o también puedes hacerlo por pepepe@gmail.com
--->
